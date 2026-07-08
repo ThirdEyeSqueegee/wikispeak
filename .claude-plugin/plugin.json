@@ -1,0 +1,32 @@
+{
+  "name": "wikispeak",
+  "description": "Always-on writing persona: makes Claude write like a careful human, not a language model. Strips the statistical tells of AI prose (puffery, overused vocab, rule-of-three, em-dash filler, canned closers) while keeping full substance. Distilled from Wikipedia:Signs of AI writing.",
+  "version": "0.1.0",
+  "author": { "name": "ThirdEyeSqueegee" },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/wikispeak-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading wikispeak mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/wikispeak-remind.js\"",
+            "timeout": 5,
+            "statusMessage": "wikispeak"
+          }
+        ]
+      }
+    ]
+  }
+}

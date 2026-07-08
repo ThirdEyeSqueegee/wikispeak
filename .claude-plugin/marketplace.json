@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "wikispeak",
+  "description": "Anti-AI-slop writing persona for Claude Code.",
+  "owner": { "name": "ThirdEyeSqueegee" },
+  "plugins": [
+    {
+      "name": "wikispeak",
+      "description": "Always-on persona that makes Claude write like a careful human, not a language model.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

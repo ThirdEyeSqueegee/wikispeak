@@ -1,0 +1,11 @@
+# wikispeak runtime flag (written by hooks at your CLAUDE_CONFIG_DIR, not here — belt and braces)
+.wikispeak-off
+
+# OS / editor cruft
+.DS_Store
+*.swp
+*~
+
+# node (hooks are dependency-free, but guard against stray installs)
+node_modules/
+npm-debug.log*

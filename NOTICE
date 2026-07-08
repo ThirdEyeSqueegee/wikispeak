@@ -1,0 +1,20 @@
+wikispeak
+=========
+
+The code (hooks, statusline, manifests) is licensed under MIT. See LICENSE.
+
+The persona ruleset in skills/wikispeak/SKILL.md is distilled and adapted
+from:
+
+  "Wikipedia:Signs of AI writing"
+  https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+  by Wikipedia contributors, licensed under
+  Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+As a derivative of that page, SKILL.md is likewise offered under CC BY-SA 4.0.
+If you modify and redistribute it, keep this attribution and share your
+changes under the same license.
+
+Mechanism (SessionStart-hook-as-persona) modeled on the caveman plugin:
+  https://github.com/juliusbrussee/caveman
