@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0
+
+- Coexist with terseness personas like caveman. wikispeak now declares its
+  axis as word and shape choice, not length or register: it yields register
+  to an active terseness persona and keeps its vocab and structure rules
+  underneath, so the two no longer fight. Retuned the per-turn reminder to
+  match.
+- Reframed the README and plugin descriptions around the benefit (tight,
+  precise prose that gets to the point) rather than avoiding AI-speak.
+
 ## 0.1.0
 
 Initial release.
