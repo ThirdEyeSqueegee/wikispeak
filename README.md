@@ -1,10 +1,10 @@
 # wikispeak
 
-An always-on writing persona for [Claude Code](https://claude.com/claude-code) that makes Claude write like a careful human instead of a language model.
+An always-on writing persona for [Claude Code](https://claude.com/claude-code) that keeps Claude's prose tight: get to the point, use precise words, skip the padding.
 
-Large language models regress to the mean. They smooth specific, interesting facts into generic praise, reach for the same overused words, and lean on a handful of recognizable shapes: the rule of three, participle tails, "not just X but Y", em-dash filler, and tidy "In conclusion" wrap-ups. wikispeak injects a compact ruleset at the start of every session that steers Claude away from those tells while keeping the substance intact.
+Left alone, model prose tends to inflate. It pads a simple fact with generic praise, reaches for a stock set of fancy words (delve, pivotal, testament to), stacks everything in threes, and winds down with an "In conclusion" that repeats what it just said. The result reads longer than it is and buries the point. wikispeak injects a compact ruleset at the start of every session that cuts the padding and keeps the substance: say the specific thing, in plain words, once.
 
-The ruleset is distilled from Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), trimmed to the patterns Claude can control in its own prose. The forensic bits (fake DOIs, broken wikitext, edit-summary tells) are left out.
+The ruleset is distilled from Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), a catalogue of the exact phrasings and structures that signal padded prose, trimmed to the patterns Claude can control in its own writing.
 
 ## How it works
 
@@ -64,7 +64,7 @@ Because the script emits just the badge, it composes cleanly wherever you splice
 
 A few of the shifts it nudges toward:
 
-| Slop | wikispeak |
+| Padded | Tight |
 |---|---|
 | "This serves as a testament to the enduring legacy..." | "This is one of the oldest examples." |
 | "authored", "utilized", "leveraged" | "wrote", "used", "used" |
@@ -75,8 +75,8 @@ A few of the shifts it nudges toward:
 ## What it won't touch
 
 - **Code, quoted text, and verbatim output.** Untouched. This is about prose written *for you*, not the contents of files.
-- **Correctness and structure.** It never strips citations, drops needed headings, or adds grammar errors to "seem human". Substance over disguise.
-- **Legitimate formality.** Good grammar and formal register are fine. The tells are specific words and shapes, not formality itself.
+- **Correctness and structure.** It never strips citations, drops needed headings, or dumbs prose down. Tighter, not lossier.
+- **Legitimate formality.** Good grammar and a formal register are fine. The target is padding and vague word choice, not formality itself.
 
 ## Layout
 
