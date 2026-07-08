@@ -42,7 +42,7 @@ if (off) process.exit(0);
 process.stdout.write(JSON.stringify({
   hookSpecificOutput: {
     hookEventName: 'UserPromptSubmit',
-    additionalContext: 'WIKISPEAK MODE ACTIVE. Write like a careful human, not a language model: specific over grand, plain over puffed. No puffery, overused-vocab pile-ups, rule-of-three, participle tails, negative parallelism, em-dash filler, or canned closers. Code and verbatim output untouched.'
+    additionalContext: 'WIKISPEAK MODE ACTIVE. Word and shape choice, not length: at whatever register is active (follow a terseness persona like caveman if present), avoid AI vocab pile-ups, puffery, rule-of-three, participle tails, negative parallelism, em-dash filler, and canned closers. Code and verbatim output untouched.'
   }
 }));
 process.exit(0);
