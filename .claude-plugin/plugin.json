@@ -1,7 +1,7 @@
 {
   "name": "wikispeak",
   "description": "Always-on writing persona that keeps Claude's prose tight: gets to the point, uses precise words, cuts the padding (puffery, overused vocab, rule-of-three, em-dash filler, canned closers) while keeping full substance. Distilled from Wikipedia:Signs of AI writing.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": { "name": "ThirdEyeSqueegee" },
   "hooks": {
     "SessionStart": [

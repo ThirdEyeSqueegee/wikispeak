@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0
+
+- Added a `## Persistence` section to the persona, matching the shape of
+  sibling personas (caveman, ponytail). It states the persona is active every
+  response and every rule always applies, with anti-drift lines so the persona
+  holds across long sessions and context compaction instead of relapsing into
+  slop. The on/off toggle stays in Boundaries.
+
 ## 0.2.0
 
 - Coexist with terseness personas like caveman. wikispeak now declares its
